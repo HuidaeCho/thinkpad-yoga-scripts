@@ -17,7 +17,7 @@ https://gist.githubusercontent.com/ei-grad/4d9d23b1463a99d24a8d/raw/rotate.py
 
 ### BEGIN Configurables
 
-rotate_pens = False # Set false if your DE rotates pen for you
+rotate_pens = True # Set false if your DE rotates pen for you
 disable_touchpads = False # Don't use in conjunction with tablet-mode
 
 ### END Configurables
@@ -42,7 +42,7 @@ for basedir in glob('/sys/bus/iio/devices/iio:device*'):
     if 'accel' in read('name'):
         break
 else:
-    sys.stderr.write("Can't find an accellerator device!\n")
+    sys.stderr.write("Can't find an accelerator device!\n")
     sys.exit(1)
 
 
